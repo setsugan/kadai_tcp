@@ -19,7 +19,8 @@ int main(void)
     addr.sin_addr.s_addr = inet_addr("127.0.0.1"); // ip
     connect(sockfd, (struct sockaddr *)&addr, sizeof(struct sockaddr_in));
 
-    char message[] = "Hello World";
+    char message[1000];
+    cin.getline(message, 1000);
     send(sockfd, message, 12, 0);
     cout << message << "を送信" << endl;
 }

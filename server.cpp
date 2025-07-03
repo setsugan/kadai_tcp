@@ -26,7 +26,7 @@ int main(void)
 
     char str[12];
     recv(connect, str, 12, 0);
-    cout << str << endl;
+    cout << str << "を受信" << endl;
 
     close(connect);
     close(sockfd);

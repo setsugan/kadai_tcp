@@ -21,5 +21,5 @@ int main(void)
 
     char message[] = "Hello World";
     send(sockfd, message, 12, 0);
-    cout << message << endl;
+    cout << message << "を送信" << endl;
 }
